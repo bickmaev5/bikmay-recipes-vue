@@ -1,0 +1,9 @@
+    mutation insert_recipes_one($object: recipes_insert_input!) {
+        insert_recipes_one(object: $object) {
+                imageUrl
+                ingredients
+                instruction
+                name
+                reciepeUrl
+        }
+    }

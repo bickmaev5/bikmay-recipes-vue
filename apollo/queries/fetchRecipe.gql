@@ -1,0 +1,10 @@
+query recipe($id: uuid!) {
+  recipes_by_pk(id: $id) {
+    name
+    instruction
+    ingredients
+    imageUrl
+    id
+    reciepeUrl
+  }
+}
