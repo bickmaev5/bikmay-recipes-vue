@@ -1,5 +1,5 @@
 <template>
-  <a-table :columns="columns" :data-source="raid_top">
+  <a-table :columns="columns" :data-source="raid_top" row-key="id">
       <span slot="fractions" slot-scope="fraction">{{fraction === 'horde' ? 'Орда' : 'Альянс'}}</span>
   </a-table>
 </template>
@@ -38,7 +38,7 @@ const columns = [
 export default {
     apollo: {
         raid_top: {
-            prefetch: false,
+            prefetch: true,
             query: raidTop,
         }
     },
