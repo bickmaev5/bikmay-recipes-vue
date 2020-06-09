@@ -1,0 +1,10 @@
+query {
+    raid_top {
+        id
+        guildName
+        fraction
+        place
+        realm
+        progress
+    }
+}
