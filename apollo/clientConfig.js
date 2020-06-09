@@ -6,6 +6,6 @@ export default function(context){
     		credentials: 'same-origin'
   		},
   		cache: new InMemoryCache(),
-	    wsEndpoint: 'ws://bikmay-recipes.herokuapp.com/v1/graphql',
+	    wsEndpoint: 'wss://bikmay-recipes.herokuapp.com/v1/graphql',
   	}
 }
