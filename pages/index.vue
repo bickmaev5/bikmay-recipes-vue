@@ -4,7 +4,7 @@
     <app-nav/>
     <a-layout-content class="content">
       <h1>Рецепты</h1>
-      <a-list item-layout="vertical" :data-source="recipes">
+      <a-list item-layout="vertical" :grid="{ gutter: 16, xs: 1, sm: 2, md: 4, lg: 4, xl: 6, xxl: 3 }" :data-source="recipes">
         <a-list-item slot="renderItem" slot-scope="item">
           <recipe-card
              :id="item.id"

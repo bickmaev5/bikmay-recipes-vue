@@ -32,7 +32,12 @@ export default {
 
 <style scoped>
     img {
-        max-height: 200px;
+        height: 450px;
+
         object-fit: cover;
+
+        @media screen and (max-width: 767px) {
+            max-height: 200px;
+        }
     }
 </style>
